@@ -1,44 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- CSS Files -->
-    <link rel= "stylesheet" href="style.css">
-    <link rel= "stylesheet" href="color-1.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Your Name - Personal Portfolio Website">
+  <title>Your Name</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<!-- Main Container Start-->
-<div class = "main-container">
-<!-- Aside Start-->
-<div class="aside">
-    <div class="logo">
-     <a href="#"><span>H</span>aseem</a>   
+  <!-- Navbar -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <h1>Hi, I'm [Your Name]</h1>
+      <p>A [Your Role/Title] passionate about building solutions that matter.</p>
+      <a href="#projects" class="btn">View My Projects</a>
     </div>
-    <ul class="nav">
-        <li><a href="#" class="active"><i class="fa fa-home"></i> Home</a></li>
-        <li><a href="#"><i class="fa fa-user"></i> About</a></li>
-        <li><a href="#"><i class="fa fa-list"></i> Services</a></li>
-        <li><a href="#"><i class="fa fa-briefcase"></i> Portfolio</a></li>
-        <li><a href="#"><i class="fa fa-comments"></i> Contact</a></li>
-    </ul>
-</div>
-<!-- Aside End-->
-<!-- Main Content Start-->
-<div class="main-content">
-<!--Home Section Start-->
-<section class="home section">
- Home
-</section>
-<!--Home Section End-->
-</div>
-<!-- Main Content End-->
-</div>
-<!-- Main Container End-->
-<!-- JavaScript Files-->
-<script src="script.js"></script>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        I'm a [Your Profession] specializing in [specific skill, e.g., web development, machine learning, etc.]. 
+        I enjoy creating impactful projects and collaborating with diverse teams.
+      </p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project-list">
+        <div class="project-item">
+          <h3>Project 1</h3>
+          <p>Description of the project.</p>
+          <a href="https://yourprojectlink.com" target="_blank">View Project</a>
+        </div>
+        <div class="project-item">
+          <h3>Project 2</h3>
+          <p>Description of the project.</p>
+          <a href="https://yourprojectlink.com" target="_blank">View Project</a>
+        </div>
+        <!-- Add more project items here -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Have a project idea or just want to say hi? Let's connect!</p>
+      <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Your Name. All rights reserved.</p>
+  </footer>
 </body>
 </html>
